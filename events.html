@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Technology Management Club</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/641ebcf430.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Freeman&family=Poppins:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" style="width: 20%; height: 5%;" <h1> Technology Management Club</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="events">
+            <h2><i class="fa-solid fa-calendar-week fa-beat-fade"></i> Upcoming Events</h2>
+            <div class="event">
+                <div class="event-img">
+                    <img src="img/hackathon.png" alt="Hackathon">
+                    <button class="join-btn"><i class="fa-solid fa-file-signature fa-bounce"></i> Join Now</button>
+                </div>
+                <div class="event-details">
+                    <h3 style="font-size: 50px;">Tech Titans Hackathon</h3>
+                    <p>Date: June 15, 2024</p>
+                    <p>Collaborate, code, and create innovative solutions in a high-energy environment.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-img">
+                    <img src="img/game.png" alt="Gaming">
+                    <button class="join-btn"><i class="fa-solid fa-file-signature fa-bounce"></i> Join Now</button>
+                </div>
+                <div class="event-details">
+                    <h3 style="font-size: 50px;">Gaming Guild Tournament</h3>
+                    <p>Date: July 20, 2024</p>
+                    <p>Compete in your favorite games and showcase your skills in a friendly competition.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="old-events">
+            <h2><i class="fa-regular fa-calendar-check fa-beat-fade"></i> Past Events</h2>
+            <table>
+                <tr>
+                    <td class="event-done">
+                        <div class="event-done-img">
+                            <img src="img/2.png" alt="Figma Workshop">
+                        </div>
+                        <div class="event-done-details">
+                            <h3>Figma Workshop</h3>
+                            <p>Date: May 12, 2024</p>
+                        </div>
+                    </td>
+                    <td class="event-done">
+                        <div class="event-done-img">
+                            <img src="img/eafc.png" alt="Neon Run">
+                        </div>
+                        <div class="event-done-details">
+                            <h3>EAFC 24 Tournament</h3>
+                            <p>Date: November 23, 2023</p>
+                        </div>
+                    </td>
+                    <td class="event-done">
+                        <div class="event-done-img">
+                            <img src="img/itc_run.png" alt="Neon Run">
+                        </div>
+                        <div class="event-done-details">
+                            <h3>Neon Run</h3>
+                            <p>Date: June 2, 2023</p>
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        
+        
+    </main>
+    <footer>
+        <img src="img/logo.png" style="width: 10%;">
+        <p>&copy; 2024 Technology Management Club. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+    document.querySelectorAll('.join-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Redirect to Join Event page.');
+        });
+    });
+    </script>
+</body>
+</html>

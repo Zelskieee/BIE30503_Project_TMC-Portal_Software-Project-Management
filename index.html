@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Technology Management Club</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <script src="https://kit.fontawesome.com/641ebcf430.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Freeman&family=Poppins:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" style="width: 20%; height: 5%;" <h1> Technology Management Club</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>Welcome to the Technology Management Club</h2>
+        <p>Empowering future leaders in technology management</p>
+        <img id="dynamicImage" src="img/1.png" style="width: 95%;"/>
+    </section>
+    <main>
+        <section class="introduction" id="about">
+            <h2>About Our Club</h2>
+            <p style="text-align: center;">The Technology Management Club is dedicated to fostering leadership and management skills in the field of technology. We host events, workshops, and networking opportunities for our members.</p>
+        </section>
+        <!-- Other sections go here -->
+    </main>
+    <footer id="contact">
+        <img src="img/logo.png" style="width: 10%;">
+        <p>&copy; 2024 Technology Management Club. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Array of image sources
+        const images = [
+            'img/1.png',
+            'img/2.png',
+            'img/3.png',
+            'img/4.png',
+            'img/5.png',
+            'img/6.png',
+            'img/7.png',
+            'img/8.png',
+            'img/9.png',
+            'img/10.png',
+            'img/11.png'
+        ];
+
+        // Initial index
+        let currentIndex = 0;
+
+        // Function to change the image
+        function changeImage() {
+            // Debugging: Log the current index and image source
+            console.log('Current Index:', currentIndex);
+            console.log('Changing to:', images[currentIndex]);
+
+            // Change the image source
+            document.getElementById('dynamicImage').src = images[currentIndex];
+
+            // Update the index for the next image
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Change image every 5 seconds
+        setInterval(changeImage, 5000);
+
+        // Initial call to set the first image correctly
+        changeImage();
+    </script>
+</body>
+</html>
